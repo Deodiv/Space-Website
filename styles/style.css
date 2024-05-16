@@ -34,6 +34,7 @@ body{
     color: white;
 }
 
+<<<<<<< HEAD
 /* Nav */
 .header{
     display: flex;
@@ -98,6 +99,15 @@ nav a{
     width: 100%;
 }
 /* Main section for mobile menu */
+=======
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem;
+}
+
+>>>>>>> 219971ab9f69145f23d8b61d0d6bb14c5602ea07
 main{
     display: flex;
     justify-content: center;
@@ -128,6 +138,7 @@ main p{
     text-align: center;
     line-height: 1.5;
     width: 20.5rem;
+<<<<<<< HEAD
     margin-bottom: 7.1rem;
 }
 
@@ -154,5 +165,8 @@ main div span{
         background-color: red;
         display: none;
     }
+=======
+    margin-bottom: 12rem;
+>>>>>>> 219971ab9f69145f23d8b61d0d6bb14c5602ea07
     
 }
