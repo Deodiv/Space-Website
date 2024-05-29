@@ -6,7 +6,8 @@
     /* Color */
     --midnightNavy:#0B0D17;
     --white:#ffff;
-    --mistyLilac:#D0D6F9; 
+    --mistyLilac:#D0D6F9;
+    --darkGrey: #979797; 
 
     /* Text Size */
     --heading1: 9.375rem;
@@ -34,7 +35,6 @@ body{
     color: white;
 }
 
-<<<<<<< HEAD
 /* Nav */
 .header{
     display: flex;
@@ -98,16 +98,8 @@ nav a{
 .sidebar li{
     width: 100%;
 }
-/* Main section for mobile menu */
-=======
-header > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.8rem;
-}
 
->>>>>>> 219971ab9f69145f23d8b61d0d6bb14c5602ea07
+/* Main section for mobile menu */
 main{
     display: flex;
     justify-content: center;
@@ -138,11 +130,10 @@ main p{
     text-align: center;
     line-height: 1.5;
     width: 20.5rem;
-<<<<<<< HEAD
     margin-bottom: 7.1rem;
 }
 
-
+/* Explore button */
 main div{
     display: flex;
     justify-content: center;
@@ -151,8 +142,28 @@ main div{
     height: 11rem;
     background-color: var(--white);
     border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+/* Explore button hover effect */
+.circle-container::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+    border: 2rem solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.7s ease;
+}
+
+  .circle-container:hover::before {
+    border-color: var(--darkGrey);
+}  
+
+/* Explore text */
 main div span{
     color: var(--midnightNavy);
     font-family: var(--mainFont);
@@ -162,11 +173,6 @@ main div span{
 /* Media query for navbar*/
 @media(max-width: 480px) {
     .hideOnMobile{
-        background-color: red;
         display: none;
     }
-=======
-    margin-bottom: 12rem;
->>>>>>> 219971ab9f69145f23d8b61d0d6bb14c5602ea07
-    
 }
