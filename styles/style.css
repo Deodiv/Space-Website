@@ -28,8 +28,17 @@
     box-sizing: border-box;
 }
 
-body{
+/* Background images */
+
+.background-home-mobile{
     background-image: url(../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.background-destination-mobile{
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
