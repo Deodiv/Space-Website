@@ -44,6 +44,13 @@
     color: white;
 }
 
+.background-crew-mobile{
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 /* Nav */
 .header{
     display: flex;
@@ -212,6 +219,7 @@ main ul{
     margin-bottom: 1.5rem;
 }
 
+
 main a{
     list-style: none;
     text-decoration: none;
@@ -250,4 +258,15 @@ main a{
     margin-bottom: 1.5rem;
 }
 
+/* Active state for destination links */
+/* a {
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+}
 
+a:active {
+    background-color: yellow;
+} */
+
+/* Crew */
