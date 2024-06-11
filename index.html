@@ -1,64 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="">
-  <link rel="stylesheet" href="styles/style.css">
-  
-  <title>Space tourism website</title>
-</head>
-<body class="background-home-mobile">
-  <header class="header">
-    <div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Space tourism website</title>
+  </head>
+  <body class="background-home-mobile">
+    <header class="header">
       <div>
-        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></a>
-        
+        <div>
+          <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></a>
+          
+        </div>
       </div>
-    </div>
 
-    <nav>
-      <ul class="sidebar">
-        <li onclick = hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg></li>
-        <a href="index.html"><li >00 Home</li></a>
-        <a href="destination-moon.html"><li >01 Destination</li></a>
-        <a href="#"><li >02 Crew</li></a>
-        <a href="#"><li >03 Technology</li></a>
-      </ul>
-      <ul>
-        <a href="index.html" class="hideOnMobile"><li>00 Home</li></a> 
-        <a href="destination-moon.html" class="hideOnMobile"><li>01 Destination</li></a>
-        <a href="#" class="hideOnMobile"><li>02 Crew</li></a>
-        <a href="#" class="hideOnMobile"><li>03 Technology</li></a>
-        <li onclick = showSidebar()> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg></li>
-      </ul>
-    </nav>
-  </header>
+      <nav>
+        <ul class="sidebar">
+          <li onclick = hideSidebar()><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg></li>
+          <a href="index.html"><li >00 Home</li></a>
+          <a href="destination-moon.html"><li >01 Destination</li></a>
+          <a href="crew-commander.html"><li >02 Crew</li></a>
+          <a href="#"><li >03 Technology</li></a>
+        </ul>
+        <ul>
+          <a href="index.html" class="hideOnMobile"><li>00 Home</li></a> 
+          <a href="destination-moon.html" class="hideOnMobile"><li>01 Destination</li></a>
+          <a href="crew-commander.html" class="hideOnMobile"><li>02 Crew</li></a>
+          <a href="#" class="hideOnMobile"><li>03 Technology</li></a>
+          <li onclick = showSidebar()> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <h3>So, you want to travel to</h3>
+    <main>
+      <h3>So, you want to travel to</h3>
 
-    <h1>Space</h1>
+      <h1>Space</h1>
+    
+      <p class="destination-paragraph"> Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+      </p>
+    
+      <div class="circle-container"><span>Explore</span></div>
+    </main>
+    
   
-    <p class="destination-paragraph"> Let’s face it; if you want to go to space, you might as well genuinely go to 
-      outer space and not hover kind of on the edge of it. Well sit back, and relax 
-      because we’ll give you a truly out of this world experience!
-    </p>
-  
-    <div class="circle-container"><span>Explore</span></div>
-  </main>
-  
- 
-  
-<script>
-  function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-  }
-  function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-  }
-</script>
-</body>
-</html>
+    
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  </body>
+  </html>
