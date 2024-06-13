@@ -124,7 +124,6 @@ main{
 }
 
 main > h3{
-    color: var(--mistyLilac);
     font-size: var(--heading6);
     font-family: var(--secondFont);
     font-weight: lighter;
@@ -150,7 +149,7 @@ h1{
 }
 
 /* Explore button */
-main div{
+.circle-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +174,7 @@ main div{
     transition: border-color 0.7s ease;
 }
 
-  .circle-container:hover::before {
+.circle-container:hover::before {
     border-color: var(--darkGrey);
 }  
 
@@ -280,7 +279,48 @@ a:active {
     height: 1px;
     width: 90%;
     border: 1px solid var(--darkGrey);
+    margin-bottom: 2rem;
+}
+
+/* carousel nav */
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.9rem;
+}
+
+/* carousel indicator */
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: var(--darkGrey);
+    margin: 0 0.6rem;
+}
+
+.role{
+    font-family: var(--mainFont);
+    font-size: 1.3rem;
+    color: var(--darkGrey);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.crew-member{
+    font-family: var(--mainFont);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
-/* slider */
+.crew-paragraph{
+    text-align: center;
+    color: var(--mistyLilac);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 21.5rem;
+    margin-bottom: 3rem;
+}
