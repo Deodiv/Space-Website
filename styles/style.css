@@ -203,8 +203,8 @@ main h3 > span{
     color: var(--white);
 }
 
-/* Resize Destination images */
-main img{
+/* Resize planet images */
+.planet-image{
     height: 15rem;
     width: 15rem;
     margin: 2rem 0 2rem 0;
@@ -269,4 +269,18 @@ a:active {
     background-color: yellow;
 } */
 
-/* Crew */
+/* Crew image*/
+.crew-image{
+    height: 15rem;
+    width: 15rem;
+    margin: 2rem 0 0 0;
+}
+
+.crew-horizontal-line{
+    height: 1px;
+    width: 90%;
+    border: 1px solid var(--darkGrey);
+    margin-bottom: 1rem;
+}
+
+/* slider */
