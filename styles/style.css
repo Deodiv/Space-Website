@@ -9,7 +9,7 @@
     --mistyLilac:#D0D6F9;
     --darkGrey: #979797; 
 
-    /* Text Size */ 
+    /* Text Size */
     --heading1: 9.375rem;
     --heading2: 6.25rem;
     --heading3: 3.5rem;
@@ -294,8 +294,8 @@ a:active {
 .carousel-indicator{
     border: 0;
     border-radius: 50%;
-    width: 0.6rem;
-    height: 0.6rem;
+    width: 0.9rem;
+    height: 0.9rem;
     background-color: var(--darkGrey);
     margin: 0 0.6rem;
 }
