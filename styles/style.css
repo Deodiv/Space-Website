@@ -224,6 +224,12 @@ main div span{
     .hideOnMobile{
         display: none;
     }
+     .background-destination-tablet{
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
 }
 
 /* Media query for Tablet */
