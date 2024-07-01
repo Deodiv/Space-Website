@@ -127,8 +127,8 @@ main{
     flex-direction: column;
 }
 
-main > h1{
-    color: var(--mistyLilac);
+h1{
+    color: var(--white);
     font-size: var(--heading6);
     font-family: var(--secondFont);
     font-weight: lighter;
@@ -138,10 +138,15 @@ main > h1{
     letter-spacing: 0.75ch;
 }
 
-main span{
+.pick-destination span{
+    color: var(--darkGrey);
+}
+
+
+.space{
     color: var(--white);
-    font-size: 1.2rem;
-    font-family: var(--secondFont);
+    font-size: 5.8rem;
+    font-family: var(--mainFont);
     text-transform: uppercase;
     padding-right: 0.5rem;
 }
@@ -250,14 +255,16 @@ main div span{
         font-family: var(--mainFont);
         text-transform: uppercase;
         margin-bottom: 1.2rem;
+        border: 1px solid red;
     }
-    .home-paragraph{
+    .home-paragraphs{
         color: var(--mistyLilac);
         text-align: center;
         line-height: 1.5;
         width: 24rem;
         margin-bottom: 12rem;
     }
+
     .circle-container{
         width: 15rem;
         height: 15rem;
@@ -270,7 +277,6 @@ main div span{
     }
     .main > h1{
         margin-top: 5rem;
-        color: red;
     }
 }
 
@@ -309,16 +315,8 @@ main div span{
 
 
 
-
+    
 /* Mobile Destination */
-
-main h3 > span{
-    color: var(--darkGrey);
-}
-
-.pick-destination{
-    color: var(--white);
-}
 
 /* Resize planet images */
 .planet-image{
@@ -346,6 +344,7 @@ main a{
 }
 
 .moon{
+    color: var(--white);
     font-family: var(--mainFont);
     font-size: var(--heading3);
     text-transform: uppercase;
@@ -370,6 +369,7 @@ main a{
 }
 
 .eta{
+    color: var(--white);
     font-family: var(--mainFont);
     font-size: var(--heading5);
     margin-bottom: 1.5rem;
