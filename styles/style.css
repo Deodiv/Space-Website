@@ -142,7 +142,6 @@ h1{
     color: var(--darkGrey);
 }
 
-
 .space{
     color: var(--white);
     font-size: 5.8rem;
@@ -151,13 +150,16 @@ h1{
     padding-right: 0.5rem;
 }
 
-.destination-paragraph{
+.paragraph{
     color: var(--mistyLilac);
     text-align: center;
     line-height: 1.5;
     width: 20.5rem;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
+
+
 
 /* Explore button */
 .circle-container{
@@ -170,6 +172,7 @@ h1{
     border-radius: 50%;
     position: relative;
     transition: all 0.3s ease;
+    margin-top: 4.5rem;
 }
 
 /* Explore button hover effect */
@@ -197,29 +200,6 @@ main div span{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media query for Mobile*/
 @media(max-width: 600px) {
     .hideOnMobile{
@@ -227,70 +207,9 @@ main div span{
     }
 }
 
-/* Media query for Tablet */
-@media(min-width: 601px) and (max-width: 900px){
-    .hideOnTablet{  
-        display: none;
-    }
-    .background-home-tablet{
-        background-image: url(../assets/home/background-home-tablet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .header{
-        padding: 0 0 0 1.5rem;
-    }
-    nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 5.5rem;
-        backdrop-filter: blur(10px); 
-        background-color: rgba(255, 255, 255, 0.06);
-        padding-left: 40px;
-    }
-    main > span{
-        color: var(--white);
-        font-size: var(--heading1);
-        font-family: var(--mainFont);
-        text-transform: uppercase;
-        margin-bottom: 1.2rem;
-        border: 1px solid red;
-    }
-    .home-paragraphs{
-        color: var(--mistyLilac);
-        text-align: center;
-        line-height: 1.5;
-        width: 24rem;
-        margin-bottom: 12rem;
-    }
 
-    .circle-container{
-        width: 15rem;
-        height: 15rem;
-    }
 
-    .background-destination-tablet{
-        background-image: url(../assets/destination/background-destination-tablet.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .main > h1{
-        margin-top: 5rem;
-    }
-}
 
-/* Media query for Desktop */
-@media only screen and (min-width: 901px) { 
-    .hideOnDesktop{  
-        display: none;
-    }
-    .background-home-desktop{
-        background-image: url(../assets/home/background-home-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
 
 
 
@@ -351,6 +270,14 @@ main a{
     padding: 1rem 0 1rem 0;
 }
 
+.destination-paragraph{
+    color: var(--mistyLilac);
+    text-align: center;
+    line-height: 1.5;
+    width: 20.5rem;
+    margin-bottom: 3rem;
+}
+
 /* Creating an horizontal line  */
 
 .horizontal-line{
@@ -361,6 +288,14 @@ main a{
 }
 
 /* Targeting distance and eta paragraphs */
+.distance-eta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
 .distance{
     font-family: var(--secondFont);
     font-size: var(--heading6);
@@ -467,3 +402,85 @@ a:active {
     background-color: transparent;
     margin: 0 0.6rem;
 }   
+
+
+
+/* Media query for Tablet */
+@media(min-width: 601px) and (max-width: 900px) {
+    /* Home page */
+    .hideOnTablet {  
+        display: none;
+    }
+    .background-home-tablet {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header {
+        padding: 0 0 0 1.5rem;
+        margin-bottom: 4rem;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5.5rem;
+        backdrop-filter: blur(10px); 
+        background-color: rgba(255, 255, 255, 0.06);
+        padding-left: 40px;
+    }
+    .space {
+        font-size: var(--heading1);
+        margin-top: 2rem;
+    }
+    .circle-container {
+        width: 15rem;
+        height: 15rem;
+    }
+    .background-destination-tablet {
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main > h1 {
+        margin-top: 5rem;
+    }
+    .moon{
+        font-size: 4.7rem;
+    }
+    .paragraph {
+        color: var(--mistyLilac);
+        text-align: center;
+        line-height: 1.5;
+        width: 23.5rem;
+        margin-bottom: 2rem;
+    }  
+    .destination-paragraph{
+        width: 30rem;
+    } 
+    .distance-eta-container{
+        flex-direction: row;
+        gap: 5rem;
+    }   
+    .horizontal-line{
+        margin-bottom: 3rem;
+    } 
+    .distance{
+        font-size: 1.2rem;
+    }        
+}
+
+
+
+
+/* Media query for Desktop */
+@media only screen and (min-width: 901px) { 
+    .hideOnDesktop{  
+        display: none;
+    }
+    .background-home-desktop{
+        background-image: url(../assets/home/background-home-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
