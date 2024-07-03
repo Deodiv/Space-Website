@@ -54,6 +54,10 @@
     background-size: cover;
 }
 
+body{
+    height: 100vh;
+}
+
 
 /* Nav */
 .header{
@@ -112,19 +116,20 @@ nav a{
     justify-content: flex-start;
     gap: 2rem;
     padding: 10rem 0 0 2rem;
-
 }
 
 .sidebar li{
     width: 100%;
 }
 
+
 /* Main section for mobile menu */
 main{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    
 }
 
 h1{
@@ -135,7 +140,7 @@ h1{
     text-transform: uppercase;
     margin-top: 0.8rem;
     margin-bottom: 1.2rem;
-    letter-spacing: 0.75ch;
+    letter-spacing: 0.85ch;
 }
 
 .pick-destination span{
@@ -352,7 +357,7 @@ a:active {
     background-color: var(--darkGrey);
     margin: 0 0.6rem;
 }
-
+ 
 .role{
     font-family: var(--mainFont);
     font-size: 1.3rem;
@@ -418,7 +423,7 @@ a:active {
     }
     .header {
         padding: 0 0 0 1.5rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
     }
     nav {
         display: flex;
@@ -436,6 +441,7 @@ a:active {
     .circle-container {
         width: 15rem;
         height: 15rem;
+        margin-top: 6.5rem;
     }
     .background-destination-tablet {
         background-image: url(../assets/destination/background-destination-tablet.jpg);
@@ -451,7 +457,7 @@ a:active {
     .paragraph {
         color: var(--mistyLilac);
         text-align: center;
-        line-height: 1.5;
+        line-height: 1.8;
         width: 23.5rem;
         margin-bottom: 2rem;
     }  
@@ -466,8 +472,38 @@ a:active {
         margin-bottom: 3rem;
     } 
     .distance{
-        font-size: 1.2rem;
-    }        
+        letter-spacing: 0.45ch;
+    }  
+    .crew-horizontal-line{
+        display: none;
+    }
+    .carousel-nav{
+        position: fixed;
+        bottom: calc(8rem + 35rem); 
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .crew-image{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40rem; 
+        width: 40rem;
+    }     
+    .pick-destination{
+        font-size: 1.25rem;
+    }
+    .role{
+        font-size: 1.5rem;
+    }
+    .crew-member{
+        font-size: 2.5rem;
+    }
+    .crew-paragraph{
+        width: 30rem;
+    }
+
 }
 
 
