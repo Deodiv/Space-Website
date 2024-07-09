@@ -210,6 +210,7 @@ main div span{
     .hideOnMobile{
         display: none;
     }
+
 }
 
 
@@ -400,13 +401,13 @@ a:active {
 }
 
 .tech-carousel-indicator{
-    border: 1px solid var(--white);
+    border: 1px solid var(--darkGrey);
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
     background-color: transparent;
     margin: 0 0.6rem;
-}   
+} 
 
 
 
@@ -423,7 +424,7 @@ a:active {
     }
     .header {
         padding: 0 0 0 1.5rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 4.5rem;
     }
     nav {
         display: flex;
@@ -495,6 +496,7 @@ a:active {
         font-size: 1.25rem;
     }
     .role{
+        margin-top: 0.8rem;
         font-size: 1.5rem;
     }
     .crew-member{
@@ -503,15 +505,24 @@ a:active {
     .crew-paragraph{
         width: 30rem;
     }
+    .background-technology-tablet{
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Technology screen */
+    .technology-carousel-nav{
+        margin: 2rem 0 2rem 0;
+    }
+    .technology-paragraph{
+        width: 28rem;
+    }
 
 }
 
-
-
-
 /* Media query for Desktop */
 @media only screen and (min-width: 901px) { 
-    .hideOnDesktop{  
+    .hideOnTablet{  
         display: none;
     }
     .background-home-desktop{
@@ -519,4 +530,33 @@ a:active {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .header {
+        padding: 0 0 0 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 4.5rem;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5.5rem;
+        backdrop-filter: blur(10px); 
+        background-color: rgba(255, 255, 255, 0.06);
+        padding-left: 5.5rem;
+        padding-right: 7.5rem;
+        font-size: 1.1rem;
+        position: relative; 
+    }
+    nav ul {
+        gap: 4rem;
+    }
+    .desktop-horizontal-line {
+        width: 42%; 
+        left: 10%;
+        border: 1px solid  var(--darkGrey);
+        z-index: 1000; 
+        position: absolute;
+    }
+
+    
 }
